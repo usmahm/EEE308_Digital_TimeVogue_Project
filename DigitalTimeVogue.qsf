@@ -19,14 +19,14 @@
 #
 # Quartus Prime
 # Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-# Date created = 21:30:13  August 29, 2023
+# Date created = 19:00:49  August 26, 2023
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		DigitalTimeVogue_assignment_defaults.qdf
+#		DigitalClock_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -39,9 +39,9 @@
 
 set_global_assignment -name FAMILY "MAX 10"
 set_global_assignment -name DEVICE 10M50DAF484C7G
-set_global_assignment -name TOP_LEVEL_ENTITY DigitalTimeVogue
+set_global_assignment -name TOP_LEVEL_ENTITY DigitalClock
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.2
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:30:13  AUGUST 29, 2023"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:00:49  AUGUST 26, 2023"
 set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.2 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -54,3 +54,170 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+
+
+#============================================================
+# SEG7
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_0[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_1[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_2[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_3[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_4[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to HEX_5[7]
+set_location_assignment PIN_C14 -to HEX_0[0]
+set_location_assignment PIN_E15 -to HEX_0[1]
+set_location_assignment PIN_C15 -to HEX_0[2]
+set_location_assignment PIN_C16 -to HEX_0[3]
+set_location_assignment PIN_E16 -to HEX_0[4]
+set_location_assignment PIN_D17 -to HEX_0[5]
+set_location_assignment PIN_C17 -to HEX_0[6]
+set_location_assignment PIN_D15 -to HEX_0[7]
+set_location_assignment PIN_C18 -to HEX_1[0]
+set_location_assignment PIN_D18 -to HEX_1[1]
+set_location_assignment PIN_E18 -to HEX_1[2]
+set_location_assignment PIN_B16 -to HEX_1[3]
+set_location_assignment PIN_A17 -to HEX_1[4]
+set_location_assignment PIN_A18 -to HEX_1[5]
+set_location_assignment PIN_B17 -to HEX_1[6]
+set_location_assignment PIN_A16 -to HEX_1[7]
+set_location_assignment PIN_B20 -to HEX_2[0]
+set_location_assignment PIN_A20 -to HEX_2[1]
+set_location_assignment PIN_B19 -to HEX_2[2]
+set_location_assignment PIN_A21 -to HEX_2[3]
+set_location_assignment PIN_B21 -to HEX_2[4]
+set_location_assignment PIN_C22 -to HEX_2[5]
+set_location_assignment PIN_B22 -to HEX_2[6]
+set_location_assignment PIN_A19 -to HEX_2[7]
+set_location_assignment PIN_F21 -to HEX_3[0]
+set_location_assignment PIN_E22 -to HEX_3[1]
+set_location_assignment PIN_E21 -to HEX_3[2]
+set_location_assignment PIN_C19 -to HEX_3[3]
+set_location_assignment PIN_C20 -to HEX_3[4]
+set_location_assignment PIN_D19 -to HEX_3[5]
+set_location_assignment PIN_E17 -to HEX_3[6]
+set_location_assignment PIN_D22 -to HEX_3[7]
+set_location_assignment PIN_F18 -to HEX_4[0]
+set_location_assignment PIN_E20 -to HEX_4[1]
+set_location_assignment PIN_E19 -to HEX_4[2]
+set_location_assignment PIN_J18 -to HEX_4[3]
+set_location_assignment PIN_H19 -to HEX_4[4]
+set_location_assignment PIN_F19 -to HEX_4[5]
+set_location_assignment PIN_F20 -to HEX_4[6]
+set_location_assignment PIN_F17 -to HEX_4[7]
+set_location_assignment PIN_J20 -to HEX_5[0]
+set_location_assignment PIN_K20 -to HEX_5[1]
+set_location_assignment PIN_L18 -to HEX_5[2]
+set_location_assignment PIN_N18 -to HEX_5[3]
+set_location_assignment PIN_M20 -to HEX_5[4]
+set_location_assignment PIN_N19 -to HEX_5[5]
+set_location_assignment PIN_N20 -to HEX_5[6]
+set_location_assignment PIN_L19 -to HEX_5[7]
+
+#============================================================
+# KEY
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY_0
+set_instance_assignment -name IO_STANDARD "3.3 V SCHMITT TRIGGER" -to KEY_1
+set_location_assignment PIN_B8 -to KEY_0
+set_location_assignment PIN_A7 -to KEY_1
+
+#============================================================
+# SW
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_9
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to SW_8
+set_location_assignment PIN_F15 -to SW_9
+set_location_assignment PIN_B14 -to SW_8
+
+
+#============================================================
+# LED
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LEDR[9]
+set_location_assignment PIN_A8 -to LEDR[0]
+set_location_assignment PIN_A9 -to LEDR[1]
+set_location_assignment PIN_A10 -to LEDR[2]
+set_location_assignment PIN_B10 -to LEDR[3]
+set_location_assignment PIN_D13 -to LEDR[4]
+set_location_assignment PIN_C13 -to LEDR[5]
+set_location_assignment PIN_E14 -to LEDR[6]
+set_location_assignment PIN_D14 -to LEDR[7]
+set_location_assignment PIN_A11 -to LEDR[8]
+set_location_assignment PIN_B11 -to LEDR[9]
+
+
+#============================================================
+# CLOCK
+#============================================================
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLK_FPGA
+set_location_assignment PIN_P11 -to CLK_FPGA
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE fifty_mhz_1hz_2hz.vhd
+set_global_assignment -name VHDL_FILE time_incrementer.vhd
+set_global_assignment -name VHDL_FILE DigitalClock.vhd
+set_global_assignment -name VHDL_FILE seven_seg.vhd
+set_global_assignment -name VHDL_FILE second_indicator.vhd
+set_global_assignment -name VHDL_FILE hour_controller.vhd
+set_global_assignment -name VHDL_FILE minute_controller.vhd
+set_global_assignment -name VHDL_FILE mux_select.vhd
+set_global_assignment -name VHDL_FILE test_bench.vhd
+set_global_assignment -name VHDL_FILE time_buffer.vhd
+set_global_assignment -name VHDL_FILE stop_watch.vhd
+set_global_assignment -name VHDL_FILE ledr_flash.vhd
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
